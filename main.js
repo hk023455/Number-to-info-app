@@ -61,10 +61,8 @@ button.addEventListener("click", async () => {
 
                 if (data.data && Array.isArray(data.data)) {
                     console.log("Records found", data.data.length);
-                    let count = 0;
 
                     data.data.forEach(item => {
-                        if (count%2 == 0) {
                            infobox.innerHTML = infobox.innerHTML + `
                                 <div class="result-item">
                                   <p>Name: ${item.name}</p>
@@ -76,8 +74,6 @@ button.addEventListener("click", async () => {
                                   <p>Father Name: ${item.fname}</p>
                                 </div>
                               `; 
-                        }
-                        count = count + 1;
                         
                     });
                 } else if (data.message) {
