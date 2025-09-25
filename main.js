@@ -78,6 +78,8 @@ button.addEventListener("click", async () => {
                     });
                 } else if (data.message) {
                     infobox.innerHTML = `<p>${data.message}</p>`;
+                } else {
+                    infobox.innerHTML = `<p>Api Error</p>`
                 }
 
                 // resetting the button
