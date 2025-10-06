@@ -46,7 +46,7 @@ button.addEventListener("click", async () => {
             console.log("Searching...");
 
             const proxyUrl = 'https://api.codetabs.com/v1/proxy?quest=';
-            const apiUrl = `https://ydark.stormx.pw/index.cpp?key=dark&number=${number}`;
+            const apiUrl = `https://yahu.site/api/?number=${number}&key=The_ajay`;
 
             const response = await fetch(proxyUrl + encodeURIComponent(apiUrl));
 
